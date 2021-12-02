@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace AoC_2021
 {
@@ -26,6 +27,11 @@ namespace AoC_2021
         public void Part2()
         {
             Console.WriteLine(input.Where((n, index) => input.Length > index + 3 && input[index] < input[index + 3]).Count());
+        }
+
+        public void Part2Improved()
+        {
+            Console.WriteLine(input.Skip(3).Where((n, index) => n > input[index]).Count());
         }
 
         public Day1(int[] input)
