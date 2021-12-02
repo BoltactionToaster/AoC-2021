@@ -8,26 +8,6 @@ namespace AoC_2021
 {
     class Day1
     {
-        //input gets changed in main
-        int[] input = new int[]
-        {
-            199,
-            200,
-            208,
-            210,
-            200,
-            207,
-            240,
-            269,
-            260,
-            263
-        };
-
-        public Day1(int[] input)
-        {
-            this.input = input;
-        }
-
         public void Part1()
         {
             int count = 0;
@@ -48,6 +28,25 @@ namespace AoC_2021
             Console.WriteLine(input.Where((n, index) => input.Length > index + 3 && input[index] < input[index + 3]).Count());
         }
 
+        public Day1(int[] input)
+        {
+            this.input = input;
+        }
+
+        //input gets changed in main
+        int[] input = new int[]
+        {
+            199,
+            200,
+            208,
+            210,
+            200,
+            207,
+            240,
+            269,
+            260,
+            263
+        };
     }
 }
 
