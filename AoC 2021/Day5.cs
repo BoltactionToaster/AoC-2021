@@ -116,17 +116,6 @@ namespace AoC_2021
             this.lines = input;
         }
 
-        public struct UIntVector2
-        {
-            public uint x;
-            public uint y;
-            public UIntVector2(uint x, uint y)
-            {
-                this.x = x;
-                this.y = y;
-            }
-        }
-
         public struct Vector2
         {
             public int x;
